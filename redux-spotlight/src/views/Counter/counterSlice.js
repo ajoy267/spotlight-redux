@@ -9,9 +9,6 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     increment: (state) => {
-      //Redux is using Immer library under the hood to ensure immutable data
-
-      //This is describing the mutation to the state
       state.count += 1;
     },
     decrement: (state) => {
@@ -22,5 +19,4 @@ export const counterSlice = createSlice({
 
 export const { increment, decrement } = counterSlice.actions;
 
-//Export the reducer function from the slice
 export default counterSlice.reducer;
